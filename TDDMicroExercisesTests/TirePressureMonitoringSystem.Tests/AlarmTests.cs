@@ -4,10 +4,10 @@ using Autofac.Extras.Moq;
 
 namespace TDDMicroExercises.TirePressureMonitoringSystem.Tests.Tests
 {
-    [TestClass()]
+    [TestClass]
     public class AlarmTests
     {
-        [TestMethod()]
+        [TestMethod]
         public void AlarmCheck_Alarm_should_be_off_for_LowPressureThreshold_value()
         {
             using (var mock = AutoMock.GetLoose())
@@ -30,7 +30,7 @@ namespace TDDMicroExercises.TirePressureMonitoringSystem.Tests.Tests
             }
         }
 
-        [TestMethod()]
+        [TestMethod]
         public void AlarmCheck_Alarm_should_be_off_for_HighPressureThreshold_value()
         {
             using (var mock = AutoMock.GetLoose())
@@ -53,7 +53,7 @@ namespace TDDMicroExercises.TirePressureMonitoringSystem.Tests.Tests
             }
         }
 
-        [TestMethod()]
+        [TestMethod]
         public void AlarmCheck_Alarm_should_be_off_for_pressure_value_inside_the_thresshold()
         {
             using (var mock = AutoMock.GetLoose())
@@ -76,7 +76,7 @@ namespace TDDMicroExercises.TirePressureMonitoringSystem.Tests.Tests
             }
         }
 
-        [TestMethod()]
+        [TestMethod]
         public void AlarmCheck_Alarm_should_be_on_for_pressure_value_bigger_than_HighPressureThreshold()
         {
             using (var mock = AutoMock.GetLoose())
@@ -99,7 +99,7 @@ namespace TDDMicroExercises.TirePressureMonitoringSystem.Tests.Tests
             }
         }
 
-        [TestMethod()]
+        [TestMethod]
         public void AlarmCheck_Alarm_should_be_on_for_pressure_value_lower_than_LowPressureThreshold()
         {
             using (var mock = AutoMock.GetLoose())
@@ -122,7 +122,7 @@ namespace TDDMicroExercises.TirePressureMonitoringSystem.Tests.Tests
             }
         }
 
-        [TestMethod()]
+        [TestMethod]
         public void AlarmCheck_Alarm_should_stay_true()
         {
             // Here we test if the value of Alarm changes after multiple calls on Check.
