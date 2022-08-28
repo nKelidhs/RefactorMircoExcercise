@@ -15,16 +15,15 @@ namespace TDDMicroExercisesTests.TicketDispenserSystem.Tests
         {
             // Arrange
             var dispenser = new TicketDispenser();
+            var ticket1 = dispenser.GetTurnTicket();
+            var ticket2ExpectedTurnNumber = ticket1.TurnNumber + 1;
+            var ticket3ExpectedTurnNumber = ticket2ExpectedTurnNumber + 1;
+            var ticket4ExpectedTurnNumber = ticket3ExpectedTurnNumber + 1;
 
             // Act
-            var ticket1 = dispenser.GetTurnTicket();
-
             var ticket2 = dispenser.GetTurnTicket();
-            var ticket2ExpectedTurnNumber = ticket1.TurnNumber + 1;
             var ticket3 = dispenser.GetTurnTicket();
-            var ticket3ExpectedTurnNumber = ticket2ExpectedTurnNumber + 1;
             var ticket4 = dispenser.GetTurnTicket();
-            var ticket4ExpectedTurnNumber = ticket3ExpectedTurnNumber + 1;
 
             // Assert
             Assert.IsTrue(ticket2.TurnNumber == ticket2ExpectedTurnNumber);
@@ -40,16 +39,15 @@ namespace TDDMicroExercisesTests.TicketDispenserSystem.Tests
             var dispenser2 = new TicketDispenser();
             var dispenser3 = new TicketDispenser();
             var dispenser4 = new TicketDispenser();
+            var ticket1 = dispenser1.GetTurnTicket();
+            var ticket2ExpectedTurnNumber = ticket1.TurnNumber + 1;
+            var ticket3ExpectedTurnNumber = ticket2ExpectedTurnNumber + 1;
+            var ticket4ExpectedTurnNumber = ticket3ExpectedTurnNumber + 1;
 
             // Act
-            var ticket1 = dispenser1.GetTurnTicket();
-
             var ticket2 = dispenser2.GetTurnTicket();
-            var ticket2ExpectedTurnNumber = ticket1.TurnNumber + 1;
             var ticket3 = dispenser3.GetTurnTicket();
-            var ticket3ExpectedTurnNumber = ticket2ExpectedTurnNumber + 1;
             var ticket4 = dispenser4.GetTurnTicket();
-            var ticket4ExpectedTurnNumber = ticket3ExpectedTurnNumber + 1;
 
 
             // Assert
