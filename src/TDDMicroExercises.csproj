@@ -15,6 +15,8 @@
     </FileUpgradeFlags>
     <OldToolsVersion>2.0</OldToolsVersion>
     <UpgradeBackupLocation />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -24,6 +26,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -66,12 +69,6 @@
     <Compile Include="TelemetrySystem.SomeDependencies\TelemetryDiagnosticControlsClient1.cs" />
     <Compile Include="TelemetrySystem.SomeDependencies\TelemetryDiagnosticControlsClient2.cs" />
     <Compile Include="TelemetrySystem.SomeDependencies\TelemetryDiagnosticControlsClient3.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="TirePressureMonitoringSystem.SomeDependencies\" />
-    <Folder Include="UnicodeFileToHtmlTextConverter.SomeDependencies\" />
-    <Folder Include="TurnTicketDispenser.SomeDependencies\" />
-    <Folder Include="TelemetrySystem.SomeDependencies\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="lib\nunit.framework.dll" />
